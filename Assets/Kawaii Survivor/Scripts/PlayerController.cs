@@ -4,7 +4,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rig;
+    [Header("Elements")]
     [SerializeField] private MobileJoystick playerJoystick;
+    [Header("Settings")]
     [SerializeField] private float moveSpeed;
 
     // called once when the script is first enabled
