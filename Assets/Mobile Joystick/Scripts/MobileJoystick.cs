@@ -50,7 +50,6 @@ public class MobileJoystick : MonoBehaviour
     {
         joystickOutline.gameObject.SetActive(false);
         canControl = false;
-
         move = Vector3.zero;
     }
 
