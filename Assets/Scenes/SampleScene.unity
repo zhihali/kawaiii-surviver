@@ -9147,7 +9147,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1365786390}
-  - component: {fileID: 1365786391}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -9164,26 +9163,13 @@ Transform:
   m_GameObject: {fileID: 1365786389}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.53, y: -0.54, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1490063357}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1365786391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365786389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c67d2a1b374347e6808a36bbdec1541, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
 --- !u!1 &1490063356
 GameObject:
   m_ObjectHideFlags: 0
@@ -9195,6 +9181,7 @@ GameObject:
   - component: {fileID: 1490063357}
   - component: {fileID: 1490063359}
   - component: {fileID: 1490063358}
+  - component: {fileID: 1490063360}
   m_Layer: 0
   m_Name: EnemyRender
   m_TagString: Untagged
@@ -9211,7 +9198,7 @@ Transform:
   m_GameObject: {fileID: 1490063356}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -6.22, y: -3.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9285,6 +9272,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1490063360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490063356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c67d2a1b374347e6808a36bbdec1541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  playerDetectionRadius: 0.5
+  gizmos: 1
 --- !u!1 &1509225047
 GameObject:
   m_ObjectHideFlags: 0
@@ -9526,6 +9528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1772984992}
   - component: {fileID: 1772984993}
+  - component: {fileID: 1772984994}
   m_Layer: 0
   m_Name: Smirk Render
   m_TagString: Untagged
@@ -9603,6 +9606,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1772984994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772984991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c2fad88543d48df98d1d5a52b08dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1772984993}
 --- !u!1 &1983526595
 GameObject:
   m_ObjectHideFlags: 0
