@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class SpriteSorter : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Header(" Elements ")]
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
+    // Start is called before the first frame update
     void Start()
     {
         
@@ -11,6 +14,6 @@ public class SpriteSorter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        spriteRenderer.sortingOrder = -(int)(transform.position.y * 10);
     }
 }
